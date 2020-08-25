@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+<div class="container mt-1 mt-md-3 mt-lg-5">
+    <h2>Services:</h2>
+        <div class="mt-2 mt-md-4 mt-lg-4"></div>
+
+        <h5>Troubleshooting</h5>
+        <p>
+            Computers fail and often need routine maintenance to keep them working optimally. 
+            I am able to remove malware, clean up files on your hard drive, and other maintenance. 
+            If you have a problem, e.g., your internet connection is not working, I can work to resolve the issue.
+        </p>
+
+        <h5>New device setup</h5>
+        <p>
+
+            If you have a new computer, wifi router, printer, speakers, I can help get it up and running. 
+            I can download the necessary software and configure the settings of your new PC or Mac to 
+            connect to the internet and be able to send emails and be protected from <a href="https://www.wikiwand.com/en/Malware">malware</a>.
+            If you want to get a new computer or other device but are not sure which one to choose, 
+            I can help you find the one that works best for you.
+        </p>
+
+        <h5>Scripting automated tasks</h5>
+        <p>
+            If you have any menial computer tasks that need to be performed often, or take lots of time, I can help. 
+            <a href="https://www.wikiwand.com/en/Python_(programming_language)">Python</a> is one of the best scripting languages for 
+            <a href="https://automatetheboringstuff.com/">automating these tasks</a>, and with the wide array of 
+            Python libraries for manipulating excel spreadsheets or web scraping, these tasks can be performed in mere seconds. 
+            I can create a script you can run on your own computer.
+        </p>
+
+        <h5>Tutorials of applications</h5>
+        <p>
+            If you do not know how to use certain applications on your computer such as 
+            Google Docs, Microsoft Word, or Gmail, I am happy to show you the basics and customize the settings.
+        </p>
+
+        <h5>Backup files to the cloud</h5>
+        <p>
+            <a href="https://www.nytimes.com/2018/01/11/smarter-living/backing-up-your-photos.html">Most people recommend having another copy of irreplaceable files</a> (your pictures, important word documents, etc.,)<br>
+            Computers hard drives can and do fail, and having a copy of your files in the <a href="https://azure.microsoft.com/en-us/overview/what-is-the-cloud/">cloud</a>, 
+            where companies such as Microsoft, Google, and Amazon can make sure they are safe, is becoming more and more popular.
+            With the popular photo backup website for example, <a href="https://photos.google.com/">Google Photos</a>, you can access your photos on any computer you sign in on.
+            I can also set it up to back-up all files from the folder, making it simple for you to safeguard new photos by dragging and dropping.<br>
+            I am happy to help you secure your PC, word docs, photos.
+        </p>
+
+        <h5>Custom website</h5>
+        <p>
+            I can create a website like this based on your specifications (of course it could look totally different!).
+            Here is how I made this one:<br>
+            I wrote the backend in <a href="https://www.wikiwand.com/en/Python_(programming_language)">the language Python</a> using the <a href="http://flask.pocoo.org/">Flask micro-framwork</a>.<br>
+            The html templates use the responsive Bootstrap  framework to optimize viewing on both mobile and desktop.<br>
+            Hosted on <a href="https://www.heroku.com/dynos">Heroku</a>, it uses <a href="https://www.digicert.com/ssl/">SSL encryption (https)</a> to keep communication between the client and server secure.<br>
+            I am able to update the server instantaneosly by pushing changes to my github repository.<br>
+            Using API's, like twilio, which lets me recive text messages on my phone when a client requests a visit, I can add more functionality to the website.<br>
+            I always enjoy creating websites.
+        </p>
+
+    <a class="btn btn-primary mt-4 mb-5" href="/contact/" role="button">Request A Visit</a><br>
+    <div class="container mb-4">
+            <h6>Other Contact Info:</h6>
+            <p>
+                Email: <a href="mailto:reed@reedtechsupport.info">reed@reedtechsupport.info</a><br>
+                Google Maps: <a href="https://www.google.com/maps/place/Reed's+Tech+Support/@37.9081839,-122.5426594,14z/data=!4m5!3m4!1s0x0:0x706931de4b3ed74c!8m2!3d37.9081839!4d-122.5426594">Reed's Tech Support</a></p>
+            </p>
+    </div>
+</div>
+{% endblock body %}

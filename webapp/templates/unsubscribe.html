@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Unsubscribe{% endblock title %}
+
+{% block body %}
+<div class="container mt-1 mt-md-3 mt-lg-4">
+    <h3>Unsubscribe</h3>
+
+<div class="container mt-1 mt-md-5">
+    <form method="POST", action="/unsubscribe/">
+        {{ form.hidden_tag() }}
+        <p>
+            <strong>{{ form.email.label }}</strong><br>
+            {{ form.email }}<br><br>
+            {% for error in form.email.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+
+        <p>
+            <input class="btn btn-primary" name="submit" type="submit" value="Confirm">
+        </p>
+    </form>
+</div>
+</div>
+{% endblock body %}

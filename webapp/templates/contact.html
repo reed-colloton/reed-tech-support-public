@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock title %}
+
+{% block body %}
+<div class="container mt-1 mt-md-3 mt-lg-4">
+    <h3>Please fill out this info to schedule a visit!</h3>
+    <p>
+        I am available most times during most days.<br>
+        From Tamalpais Ave can get to most houses in Mill Valley on my bike.
+    </p>
+</div>
+
+<div class="container mt-0 mt-md-3">
+    <form method="POST", action="/contact/">
+        {{ form.hidden_tag() }}
+        <p>
+            <strong>{{ form.name.label }}</strong><br>
+            {{ form.name }}<br><br>
+            {% for error in form.name.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            <strong>{{ form.address.label }}</strong><br>
+            {{ form.address }}<br><br>
+            {% for error in form.address.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            <strong>{{ form.email.label }}</strong><br>
+            {{ form.email }}<br><br>
+            {% for error in form.email.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            <strong>{{ form.problem.label }}</strong><br>
+            {{ form.problem }}<br><br>
+            {% for error in form.problem.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            <strong>{{ form.date.label }}</strong><br>
+            {{ form.date }}<br><br>
+            {% for error in form.date.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+                <script src='https://www.google.com/recaptcha/api.js?hl=en'></script>
+            <p>
+            <div class="g-recaptcha" data-sitekey="6LeifWoUAAAAAL_klzDtkj7YHTm2I4IVp0pQGgIS"></div>
+            </p>
+            <input class="btn btn-primary" name="submit" type="submit" value="Submit">
+            <!-- {{ form.submit }} -->
+        </p>
+    </form>
+</div>
+</div>
+{% endblock body %}

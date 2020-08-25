@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Review{% endblock title %}
+
+{% block body %}
+<div class="container mt-1 mt-md-3 mt-lg-4">
+    <h3>Leave a Review</h3>
+    <p>
+        Thank you for taking the time to leave a review!
+        I apprecitate it deeply.
+    </p>
+
+<div class="container mt-1 mt-md-5">
+    <form method="POST", action="/review/">
+        {{ form.hidden_tag() }}
+        <p>
+            <strong>{{ form.info.label }}</strong><br>
+            {{ form.info }}<br><br>
+            {% for error in form.info.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+
+        <p>
+            <input class="btn btn-primary" name="submit" type="submit" value="Submit Review">
+        </p>
+    </form>
+</div>
+</div>
+{% endblock body %}

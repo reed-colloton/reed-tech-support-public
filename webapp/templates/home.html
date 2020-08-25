@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+
+<div class="container mt-1 mt-lg-3 mt-lg-5">
+
+        <div class="w-75">
+            <h4>About Me</h4>
+            <p>
+                I'm a sophomore at Urban High School and live on Tamalpais Avenue in Mill Valley.<br>
+                I have experience in programming and technology (for example, I built this website) 
+                and am happy to help you with your technology needs and problems.
+            </p>
+        </div>
+
+        <div class="float-md-right">
+            <img src="/static/me.png" class="rounded" alt="Reed" width=148px height=244px>
+            <p>Reed Colloton,<br>Reed's Tech Support</p>
+        </div>
+        <h4>Pricing</h4>
+            <p>
+                With my hourly rate of $15, a visit less than an hour will be <strong>just 15 dollars</strong>.<br>
+                (Typical issues will take much less than an hour)<br>
+                If your problem was not fixed, you don't owe anything.
+            </p>
+            <p class="w-75 mt-4"><i>"Thanks for doing a great job!  My mother is happy with everything...."</i></p>
+            <p class="w-75 mt-4"><i>"Reed did a great job helping me setup my new iPad; he transferred all the files / settings from my old device to the new one.  
+                Reed was thorough and professional throughout the process.  He had useful suggestions and he setup a password manager for me. 
+                I strongly recommend hiring Reed to help you with your technology needs."</i><br> 
+                - LeAnn Glass
+
+            </p>
+
+    <a class="btn btn-primary mt-2 mt-md-4 mb-5" href="/contact/" role="button">Request A Visit</a><br>
+
+        <div class="w-75">
+                        <h4>Services:</h4>
+                            <div class="mt-2 mt-md-4 mt-lg-4"></div>
+                            <ul>
+                            <li><h6>Troubleshooting</h6></li>
+                            <p>
+                                Computers fail and often need routine maintenance to keep them working optimally. 
+                                I am able to remove malware, clean up files on your hard drive, and other maintenance. 
+                                If you have a problem, e.g., your internet connection is not working, I can work to resolve the issue.
+                            </p>
+                    
+                            <li><h6>New device setup</h6></li>
+                            <p>
+                    
+                                If you have a new computer, wifi router, printer, speakers, I can help get it up and running. 
+                                I can download the necessary software and configure the settings of your new PC or Mac to 
+                                connect to the internet, be able to send emails, be protected from <a href="https://www.wikiwand.com/en/Malware">malware</a>, etc.
+                                If you want to get a new computer or other device but are not sure which one to choose, 
+                                I can help you find the one that works best for you.
+                            </p>
+                    
+                            <li><h6>Scripting automated tasks</h6></li>
+                            <p>
+                                If you have any menial computer tasks that need to be performed often, or take lots of time, I can help. 
+                                <a href="https://www.wikiwand.com/en/Python_(programming_language)">Python</a> is one of the best scripting languages for 
+                                <a href="https://automatetheboringstuff.com/">automating these tasks</a>, and with the wide array of 
+                                Python libraries for manipulating excel spreadsheets or web scraping, these tasks can be performed in mere seconds.
+                                If you need to 
+                                I can create a script you can run on your own computer.
+                            </p>
+                    
+                            <li><h6>Tutorials of applications</h6></li>
+                            <p>
+                                If you do not know how to use certain applications on your computer such as 
+                                Google Docs, Microsoft Word, or Gmail, I am happy to show you the basics and customize the settings.
+                            </p>
+                    
+                            <li><h6>Backup files to the cloud</h6></li>
+                            <p>
+                <a href="https://www.nytimes.com/2018/01/11/smarter-living/backing-up-your-photos.html">Most people recommend having another copy of irreplaceable files</a> (your pictures, important word documents, etc.,)<br>
+                Computers hard drives can and do fail, and having a copy of your files in the <a href="https://azure.microsoft.com/en-us/overview/what-is-the-cloud/">cloud</a>, 
+                where companies such as Microsoft, Google, and Amazon can make sure they are safe, is becoming more and more popular.
+                With the popular photo backup website for example, <a href="https://photos.google.com/">Google Photos</a>, you can access your photos on any computer you sign in on.
+                I can also set it up to back-up all files from the folder, making it simple for you to safeguard new photos by dragging and dropping.<br>
+                I am happy to help you secure your PC, word docs, photos.
+            </p>
+
+                <li><h6>Password Manager</h6></li>
+                <p>
+                    If you, like everyone eles, struggle with remembering all your passwords, there is an easy fix; <a href="https://www.consumerreports.org/digital-security/everything-you-need-to-know-about-password-managers/">password managers</a>.
+                    Password managers allow you to enter passwords (keeping them stored safely in your account in the cloud) that are filled in automatically in your web browser.
+                    I can set up a password manager for your computer and show you how to use it.
+
+                </p>
+                    
+            <li><h6>Custom website</h6></li>
+            <p>
+                I can create a website like this based on your specifications (of course it can look totally different!).
+                If you are interested, here is how I made this site:<br>
+                I wrote the backend in <a href="https://www.wikiwand.com/en/Python_(programming_language)">the programming language Python</a> using the <a href="http://flask.pocoo.org/">Flask micro-framwork to build the website</a>.<br>
+                The html templates use the Bootstrap  framework to make sure it looks nice on both mobile and desktop screens.<br>
+                Hosted on <a href="https://www.heroku.com/dynos">Heroku</a>, it uses <a href="https://www.digicert.com/ssl/">SSL encryption (https)</a> to keep information secure.<br>
+                <!-- I am able to update the server instantly by pushing changes to my github repository.<br> -->
+                <!-- Using API's, like Twilio, which lets me recive text messages on my phone when a client requests a visit, I can easily add more functionality to the website.<br> -->
+                I always enjoy creating websites.
+            </p>
+            </ul>
+
+    </div>
+
+
+    <div class="container mb-4">
+    <a class="btn btn-primary mt-2 mt-md-4 mb-5" href="/contact/" role="button">Request A Visit</a><br>
+
+
+            <!-- {% if unsubscribe_link_email %} -->
+            <p>
+                <a class="btn btn-outline-danger" href="/unsubscribe/unsubscribe_link_email">Unsubscribe</a>
+            </p>
+            <!-- {% endif %} -->
+
+        <h6>Other Contact Info:</h6>
+        <p>
+            Email: <a href="mailto:reed@reedtechsupport.info">reed@reedtechsupport.info</a><br>
+            Google Maps: <a href="https://www.google.com/maps/place/Reed's+Tech+Support/@37.9081839,-122.5426594,14z/data=!4m5!3m4!1s0x0:0x706931de4b3ed74c!8m2!3d37.9081839!4d-122.5426594">Reed's Tech Support</a></p>
+        </p>
+</div>
+</div>
+
+
+
+{% endblock body %}
